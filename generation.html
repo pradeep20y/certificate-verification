@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Certificate Generator</title>
+  <link rel="stylesheet" href="generate.css">
+</head>
+<body class="bodys">
+  <h1 class="header"></h1>
+  <div class="container">
+    <form id="certificateForm" class="forms">
+        <h4 class="welcome">Welcome</h4>
+        <img class="image" src="profile.jpeg" width="100" height="80" >
+        <span class="span">Let's generate your Certificate</span>
+        <div class="inputs">
+            <label for="name" class="username">Name:</label>
+    <input class="names" type="text" id="name" placeholder="Enter your Name"  required><br>
+
+
+    <label for="course" class="courses">Course:</label>
+    <input type="text" class="cour" id="course" placeholder="Enter your Course Name" required><br>
+
+
+    <label class="dates" for="date" class="time">Date:</label>
+    <input class="times" type="date" id="date" required class="option"><br>
+    <input  class="btn" type="submit" value="Generate Certificate" >
+        </div>
+       
+  </form>
+
+
+  <div id="certificate"></div>
+</div>
+ 
+  <script src="certificate-generator.js"></script>
+</body>
+</html>

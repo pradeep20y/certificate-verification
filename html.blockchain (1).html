@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles (1).css" >
+</head>
+<body>
+    <div class="container">    
+        <div class="block contain1">   
+            <h1>STORAGE</h1>
+            <label id='certihash'>ENTER YOUR CONTENT IDENTIFIER</label><br><br>
+            <input id="certiinput" placeholder="Enter your Content Identifier" type="text"><br><br>
+            <label id="decrypt">ENTER YOUR DECRYPTION KEY</label><br><br>
+            <input id="decryptinp" placeholder="Enter your Decryption Key" type="text"><br></br>
+            <button id="store">Store</button><br>
+            <h3 id="output"></h3>
+            <button id="getBlockHash">Get Hash</button><br>
+            <h3 id="outputhash"></h3>
+        </div>
+        <br>
+        <div class="block contain2">
+            <h1>VERIFICATION</h1>
+            <label id="ecertihash">ENTER YOUR CERTIFICATE</label><br><br>
+            <input id="ecertiinput" placeholder="Enter your certificate" type="text"><br><br>
+            <label id="eblockhash">ENTER YOUR BLOCK HASH</label><br><br>
+            <input id="eblockinput" placeholder="Enter your Block Hash" type="text"><br><br>
+            <button id="estore">Enter</button><br>
+            <h2 id="verifi"></h2>
+        </div>   
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

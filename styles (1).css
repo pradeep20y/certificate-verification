@@ -1,0 +1,118 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+body {
+    background-color: #c1c9ce;
+    background-image: url('block1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    color: #3498db;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#store,#estore,#getBlockHash {
+    display: inline-block;
+    padding: 7px 20px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+#verifi,#outputhash,#output
+{
+    font-weight:bolder;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+#store:hover,#estore:hover,#getBlockHash:hover{
+    background-color: #c5764f; 
+    border-radius: 10%;
+}
+#certiinput,#ecertiinput,#eblockinput,#decryptinp{
+    border-style: solid;
+    border-color: black;
+    border-radius: 2cm;
+    padding: 5px 25px; 
+}
+.container {
+    display: block;
+    gap:1%;
+    margin-right: 5%;
+    align-items: center;
+}
+.block{
+    background-color: rgba(236, 231, 228, 0.929);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin:3%;
+    padding: 40px 100px;
+} */
+
+ 
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .file {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Upload, .store {
+    padding: 10px 20px;
+    background-color: #007bff;
+    margin-bottom: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Upload:hover, .store:hover {
+    background-color: #0056b3;
+  }
+  
+  #output, #outputhash {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  #status {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px;
+  }

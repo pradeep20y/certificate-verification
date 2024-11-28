@@ -1,0 +1,167 @@
+<!--   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <H1>STORAGE</H1>
+        <label id='certihash'>ENTER YOUR CERTIFICATE HASH</label><br>
+        <input id="certiinput"><br>
+        <button id="store">store</button>
+        <h3 id="output"></h3>
+
+         
+        <script  src="index.js"> </script>
+         <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script> -->
+
+
+   <!--  </body>
+</html>  
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>    
+ <div>   
+    <H1>STORAGE</H1>
+    <label id='certihash'>ENTER YOUR CERTIFICATE HASH</label><br>
+    <input id="certiinput"><br>
+    <button id="store">store</button>
+    <h3 id="output"></h3> 
+    <button id="getBlockHash">get hash</button>
+    <h4 id="outputhash"></h4>
+</div>
+<div>
+    <h1>VERIFICATION</h1>
+    <label id="ecertihash">ENTER YOUR CERTIFICATE HASH</label><br>
+    <input id="ecertiinput"><br>
+    <label id="eblockhash">ENTER YOUR BLOCK HASH</label><br>
+    <input id="eblockinput"><br>
+    <button id="estore">enter</button><br>
+    <h5 id="verifi"></h4>
+</div>   
+</div>
+  Load Web3.js from a CDN  
+ script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+      Use type="module" to enable ES6 modules  
+    <script src="index.js"></script>
+      Load Web3.js from a CDN  
+    
+ 
+
+</body>
+</html>
+ -->
+
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPFS File Upload</title>
+</head>
+<body>
+    <h1>Upload a File to IPFS</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".jpg, .jpeg, .png, .pdf" required>
+        <button type="submit">Upload</button>
+        
+    </form>
+    <button id="store">Store</button><br>
+    <h2 id="output"></h2>
+    <h3 id="outputhash"></h3>
+    <p id="status"></p>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"> </script>
+  
+</body>
+</html> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script> -->
+
+    
+   <!--  <script>
+        const JWT = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiIwNjcxMWJjZi0yYWNhLTQzNWYtYWEzNi1lNzQ2MGExNGE2NTkiLCJlbWFpbCI6ImJsb2NrcmVwcmFkZWVwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiRlJBMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfSx7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2UsInN0YXR1cyI6IkFDVElWRSJ9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiI5M2RkMzg3OGQyYTAyYTk5NmYwOSIsInNjb3BlZEtleVNlY3JldCI6IjhlY2I0ZDZhODIxODFmODU0N2UyYzY0OGUwYjFjMzEyMTExNDg5YzUzNmY5ZWU3ZGM1MmRkMjU2YjJkYWNhN2YiLCJpYXQiOjE2OTYyNDkyMDB9.cn3o-ZnDpiTXTvlC3owAjjyrTOdYvETCizBNi9pXi5M"; // Replace with your Pinata JWT token
+
+        const uploadForm = document.getElementById('uploadForm');
+        const fileInput = document.getElementById('fileInput');
+        const statusMessage = document.getElementById('status');
+
+        uploadForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const file = fileInput.files[0];
+
+            if (!file) {
+                statusMessage.textContent = 'Please select a file.';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const res = await axios.post('https://api.pinata.cloud/pinning/pinFileToIPFS', formData, {
+                    maxBodyLength: Infinity,
+                    headers: {
+                        'Content-Type': `multipart/form-data; boundary=${formData._boundary}`,
+                        'Authorization': `Bearer ${JWT}`,
+                    },
+                });
+
+                statusMessage.textContent = `File uploaded to IPFS. CID: ${res.data.IpfsHash}`;
+            } catch (error) {
+                statusMessage.textContent = `Error uploading to Pinata: ${error.message}`;
+            }
+        });
+    </script> -->
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles (1).css">
+    <title>IPFS File Upload</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Upload a File to IPFS</h1>
+        <div>
+            <form id="uploadForm">
+                <label for="fileInput">Choose a File</label>
+                <br>
+                <input class="file" type="file" id="fileInput" accept=".jpg, .jpeg, .png, .pdf" required>
+                <button class="Upload" type="submit">Upload</button>
+                <br>
+                <button class="store" id="store">Store</button><br>
+            </form>
+        </div>
+    </div>
+    
+    
+    
+    <h2 id="output"></h2>
+    <h3 id="outputhash"></h3>
+    <p id="status"></p>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"> </script>
+  
+</body>
+</html>

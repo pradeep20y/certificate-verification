@@ -1,0 +1,145 @@
+.bodys {
+background-image: url('abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-54050.avif');
+}
+
+.container {
+    background-color: whitesmoke;
+    
+    display: flex;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+   border:2px solid black;
+   justify-content: center;
+    align-items: center;
+   
+  }
+  .span
+  {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 15px;
+    margin-left: 30px;
+    color:gray
+  }
+.welcome
+{
+    font-size: 25px;
+    font:bold;
+    text-align: center;
+    position: relative;
+    bottom: 7%;
+}
+.labels
+{
+    height: 1.5rem;
+   
+    margin-bottom: 10px;
+}
+
+
+.image
+{
+    display: flex;
+    position: relative;
+    left:30%;
+    bottom: 5%;
+   padding:4px;
+   background-color:#807d7d25;
+   border-radius: 50%;
+}
+.inputs
+{
+   padding: 20px;
+
+
+}
+.names
+{
+    margin-left: 10px;
+    height: 1.5rem;
+}
+.cour{
+    margin-left: 3px;
+    height: 1.5rem;
+}
+.dates
+{
+   
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+.times
+{
+    margin-left: 20px;
+}
+.btn
+{
+    margin-left: 30px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .certificate {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  .name,
+  .course {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+ 
+  .date {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
+  .header
+  {
+    text-align: center;
+  }
+  .container
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+   
+}
+.username
+{
+    font-size: 1.5rem;
+    color:black;
+   
+}
+.courses
+{
+    font-size: 1.5rem;
+    color:black;
+}
+.time
+{
+    font-size: 1.5rem;
+    color:black;
+}
